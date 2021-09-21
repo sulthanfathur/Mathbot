@@ -84,7 +84,7 @@ def penjumlahan(n):
             num2 = randint(1,10)
             print('\nPertanyaan ',i,': ',num1,' + ',num2,sep='')
             ans1 = str(input('Jawab: '))
-            if ans1 == num1+num2:
+            if ans1.isdigit():
                 if eval(ans1) == num1+num2:
                     print("\nBenar!")
                     skor += 20
@@ -93,7 +93,7 @@ def penjumlahan(n):
             else:
                 print('\nInput salah!')
         print('\nSkor kamu:',skor)
-        input('(tekan enter untuk lanjut) ')
+        input('(tekan Enter untuk lanjut) ')
 # modul kuis pengurangan
 def pengurangan(n):
     # kuis lepas
@@ -129,7 +129,7 @@ def pengurangan(n):
             else:
                 print('\nInput salah!')
         print('\nSkor kamu:',skor)
-        input('(tekan enter untuk lanjut) ')
+        input('(tekan Enter untuk lanjut) ')
 # modul kuis campur (penjumlahan dan pengurangan)
 def campur(n):
     # kuis lepas
@@ -196,6 +196,7 @@ def campur(n):
                 else:
                     print('\nInput salah!')
         print('\nSkor kamu:',skor)
+        input('(tekan Enter untuk lanjut) ')
 # pesan yang keluar jika user mengakhiri program
 def endGame():
     input('\nTerima kasih telah bermain kuis ini. Sampai jumpa lagi! ')
